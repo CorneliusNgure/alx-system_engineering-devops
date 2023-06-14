@@ -1,2 +1,4 @@
 #!/bin/bash
 echo hello kings
+#!/bin/bash
+hello "hello kings"
