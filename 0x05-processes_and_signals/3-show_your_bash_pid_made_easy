@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# A simpler way of listing the current processes
+# and PID containing the keyword, bash
+
+pgrep bash -l 
