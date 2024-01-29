@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# Displays the contents of the current directory.
+# Cuts only the 1st column; delimeter=dash. 
+
+list=$(ls)
+for i in $list
+do
+	echo "$i" | cut -d '-' -f2
+done
