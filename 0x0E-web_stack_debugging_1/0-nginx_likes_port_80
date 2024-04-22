@@ -2,7 +2,7 @@
 # Debug nginx server to listen to on port 80 again.
 
 #delete the default nginx file
-rm /etc/nginx/nginx-enabled/default
+rm /etc/nginx/sites-enabled/default
 #configure the server to listen on port 80
 ln -s /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
 service nginx restart
