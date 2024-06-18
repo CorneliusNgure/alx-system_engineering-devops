@@ -14,4 +14,10 @@ The tasks demonstrate my understanding of exporting data as is from the site, ex
       * The script must accept an interger as a parameter, which is the employee ID.
       * The script must display on the standard output the employee TODO list progress.
 
-### Task 1: 
+### Task 1: Export to CSV
+  * Using what you did in the task #0, extend your Python script to export data in the CSV format.
+
+  * Requirements:
+    * Records all tasks that are owned by this employee
+    * Format must be: "USER_ID","USERNAME","TASK_COMPLETED_STATUS","TASK_TITLE"
+    * File name must be: USER_ID.csv
