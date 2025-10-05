@@ -1,16 +1,2 @@
 #!/bin/bash
-# Convert WATER (base water) and STIR (base stir) to base 10, add them,
-# then convert the sum to base bestchol.
-
-# Convert WATER to base 10
-num1=$(echo "ibase=WATER; $WATER" | bc)
-
-# Convert STIR to base 10
-num2=$(echo "ibase=STIR; $STIR" | bc)
-
-# Add the two base-10 values
-sum=$((num1 + num2))
-
-# Print the result in base bestchol
-echo "obase=bestchol; $sum" | bc
-
+echo $(( $(echo "$WATER" | tr 'water' '01234') + $(echo "$STIR" | tr 'stir' '01234') )) | tr '0123456789' 'bestchol'
