@@ -1,2 +1,2 @@
 #!/bin/bash
-echo $(echo "ibase=water; $(echo $WATER | tr 'water' '01234'); ibase=stir; $(echo $STIR | tr -d '.' | tr 'stir' '0123');" | bc | awk '{print}' | tr '01234567' 'bestchol')
+echo $(echo $WATER $STIR | tr 'waterstir' '012340123' | awk '{printf "%s\n", strtonum($1)+strtonum($2)}' | tr '0123456789' 'bestchol')
