@@ -1,3 +1,2 @@
 #!/bin/bash
-#!/bin/bash
 echo $(echo "ibase=water; $(echo $WATER | tr 'water' '01234'); ibase=stir; $(echo $STIR | tr -d '.' | tr 'stir' '0123');" | bc | awk '{print}' | tr '01234567' 'bestchol')
